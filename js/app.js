@@ -16,7 +16,8 @@ outPut = learning.toLocaleUpperCase();
 
 outPut = learning.substring(0,7);
 outPut = learning.slice(5);
-// outPut = learning.slice(-5);
+outPut = learning.slice(-5);
+outPut = learning.repeat(3);
 
 
 
@@ -24,5 +25,6 @@ outPut = learning.slice(5);
 
 
 
+alert(outPut);
 console.log(outPut);
 
