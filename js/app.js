@@ -18,6 +18,10 @@ outPut = learning.substring(0,7);
 outPut = learning.slice(5);
 outPut = learning.slice(-5);
 outPut = learning.repeat(3);
+outPut = learning.split(' ');
+
+outPut = learning.replace('Let\'s', 'we can');
+outPut = learning.includes('something new');
 
 
 
