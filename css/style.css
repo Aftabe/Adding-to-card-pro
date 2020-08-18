@@ -1,0 +1,342 @@
+/* Normalizing css */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #f3e9e9;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding: 2rem 4rem;
+    background-color: rgb(221, 193, 33);
+}
+
+li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.logo {font-size: 3rem;
+
+}
+
+.shopping-card-icon {
+    position: relative;
+    display: inline-block;
+    font-size: 3rem;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 350px;
+    height: 400px;
+}
+
+.shopping-card-icon:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    right:0;
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 1rem;
+    min-height: 400px;
+    min-width: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* card style */
+.card {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    /* max-width: 300px; */
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: black;
+    background-color: transparent;
+    border: 1px solid grey;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+
+  .card-title{
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .card-title span{
+      margin: 1rem;
+      font-size: 1.6rem;
+  }
+
+  .card-title-undeline{
+      width: 300px;
+      height: 1px;
+      background-color: grey;
+      margin: 5px auto;
+  }
+
+
+  /* Banner */
+  #banner{
+      min-height: 70vh;
+      /* background-color: green; */
+      background-image: url(/img/lap.jpg);
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
+      position: relative;
+  }
+
+
+
+  /* about form */
+  .search-container{
+    padding: 10px;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .input{
+    padding: 18px 17px;
+    outline: none;
+    border: none;
+    width: 500px;
+    font-size: 20px;
+  }
+  
+  
+  .submit{
+    padding: 5px;
+    margin-top: 14px;
+    font-size: 21px;
+    position: absolute;
+    margin-left: -50px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease-in;
+  }
+
+  .submit:hover{
+      color:  rgb(221, 193, 33);
+  }
+
+  .search-container h1{
+      text-transform: capitalize;
+      margin: 16px auto;
+      font-size: 24px;
+      color: white;
+      word-spacing: 4px;
+  }
+
+  .search-container h5{
+      text-transform: capitalize;
+      font-size: 15px;
+      margin: 16px auto;
+      color: white;
+      word-spacing: 5px;
+  }
+
+  /* banner-bottom-text */
+  .banner-bottom-text{
+      position: absolute;
+      background-color:rgb(221, 193, 33);
+      bottom: 0;
+      width: 100%;
+      font-size: 1.5rem;
+      padding: 2rem;
+
+  }
+
+  .lists{
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+  }
+
+  .lists li{
+      margin: 1rem 4rem;
+  }
+
+  .list-icon{
+      margin-right: 2rem;
+      font-size: 4rem;
+  }
+
+  .sub-list{
+      display: flex;
+      align-items: baseline;
+      /* justify-content: center; */
+      align-items: center;
+  }
+
+  .list-text{
+      width: 152px;
+      font-size: 1.5rem;
+  }
+
+  /* our courses */
+
+  .courses h1{
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+
+  .row{
+      padding: 5rem 7rem;
+      width: 100%;
+      /* padding-left: 18rem; */
+  }
+  /* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.333%;
+    padding: 0rem;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:700px) {
+    .column, #card {
+      width: 100%;
+    }
+  }
+
+  /* Card */
+  #card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: white;
+    transition: 0.3s;
+    width: 75%;
+    margin: 2rem auto;
+  }
+  
+  #card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 1.5rem;
+    text-align: left;
+  }
+
+  .container h3{
+    font-size: 1.6rem;
+    margin: 1rem auto;
+  }
+
+  .container p{
+    font-size: 1.6rem;
+    margin: 1rem auto;
+  }
+
+  .card-btn{
+    background-color: rgb(221, 193, 33) !important;
+    border: none !important;
+    outline: none !important;
+    padding: 1.5rem 3rem;
+    color: white;
+    text-transform: capitalize;
+    /* margin-bottom: 2rem; */
+    width: 100%;
+  }
+
+  .card-btn:hover{
+    opacity: .8;
+  }
+
+
+  /* stars */
+  .stars{
+    font-size: 1.3rem;
+
+  }
+  /* rate */
+  .rate{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem auto;
+    font-size: 1.6rem;
+  }
+
+
+  .footer-container{
+    padding: 10px;
+  }
+
+  .footer-row{
+    display: flex;
+    justify-content: center;
+  }
+
+  .col-a{
+    padding: 18px;
+    flex: 35%;
+  }
+
+  .col-b{
+    flex: 70%;
+    padding: 18px;
+  }
+
+  .footer-text ul{
+    list-style-type: none;
+  }
+
+  .footer-text li{
+    margin: 26px auto;
+  }
+
+  .footer-text ul li a{
+    text-decoration: none;
+    font-size: 20px;
+  }
