@@ -4,315 +4,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DOM Shopping Cart</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Font awesome -->
+    <script src="/js/all.js"></script>
+    <title>Add to card pro</title>
 </head>
 
 <body>
-    <header id="header" class="header">
-        <div class="container">
-            <div class="row">
-                <div class="four columns">
-                    <img src="img/logo.jpg" id="logo">
+    <!-- Navbar section-->
+    <ul class="navbar">
+        <li>
+            <a href="#" class="logo">logo</a>
+        </li>
+        <li>
+            <a href="#" class="shopping-card-icon">
+                <i class="fa fa-cart-plus" aria-hidden="true">
+                </i>
+                <div id="shopping-cart" class="dropdown-content">
+                    <!-- Shopping card -->
+                    <div id="cart-content" class="card">
+                        <div class="card-title">
+                            <span>images</span>
+                            <span>name</span>
+                            <span>Price</span>
+                        </div>
+                        <div class="card-title-undeline"></div>
+                        <div class="card-body">
+                        </div>
+                        <p><button id="clear-cart">Clear card</button></p>
+                    </div>
                 </div>
-                <div class="two columns u-pull-right">
-                    <ul>
-                        <li class="submenu">
-                            <img src="img/cart.png" id="img-cart">
-                            <div id="shopping-cart">
-                                <table id="cart-content" class="u-full-width">
-                                    <thead>
-                                        <tr>
-                                            <th>Image</th>
-                                            <th>Name</th>
-                                            <th>Price</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <img src="img/course1.jpg" width="120">
-                                            </td>
-                                            <td>HTML5, CSS3, JavaScript for beginners</td>
-                                            <td>$15</td>
-                                            <td>
-                                                <a href="#" class="remove">X</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <img src="img/course2.jpg" width="120">
-                                            </td>
-                                            <td>Cooking Course</td>
-                                            <td>$15</td>
-                                            <td>
-                                                <a href="#" class="remove">X</a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+            </a>
+        </li>
+    </ul>
+    <!-- Banner -->
+    <div id="banner" class="banner">
+        <div class="search-container">
+            <h1>lets learn something new</h1>
+            <h5>there is always time to start with us</h5>
+            <form id="form" action="#">
+                <input class="input" type="text" placeholder="Search.." name="search">
+                <button class="submit" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="banner-bottom-text">
+            <ul class="lists">
+                <li class="sub-list"> <span><i class="far fa-lightbulb list-icon"></i></span>
+                    <p class="list-text">10,000 online course Start learning new skills</p>
+                </li>
+                <li class="sub-list"> <span><i class="fas fa-book list-icon"></i></span>
+                    <p class="list-text">30,00 online books let's read more</p>
+                </li>
+                <li class="sub-list"> <span><i class="fas fa-laptop list-icon"></i></span>
+                    <p class="list-text">10,000 online toturials you can join us</p>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-                                <a href="#" id="clear-cart" class="button u-full-width">Clear Cart</a>
+    <!-- Courses -->
+    <div class="cousrses-container">
+        <div class="courses">
+            <div class="row">
+                <h1>our courses</h1>
+                <div class="column">
+                    <!-- card -->
+                    <div id="card">
+                        <img src="/img/lap.jpg" alt="Avatar" style="width:100%">
+                        <div class="container">
+                            <h3>HTML, CSS AND JAVASCRIPT FOR STUDENTS</h3>
+                            <p>Ali Asghari</p>
+                            <div class="stars">
+                                <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star-half-alt"></i></span>
                             </div>
-                        </li>
+                            <div class="rate">
+                                <span class="firt"><del>$30</del></span>
+                                <span class="last">$15</span>
+                            </div>
+                            <button class="card-btn">add to card</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div id="card">
+                        <img src="/img/lap.jpg" alt="Avatar" style="width:100%">
+                        <div class="container">
+                            <h3>HTML, CSS AND JAVASCRIPT FOR STUDENTS</h3>
+                            <p>Ali Asghari</p>
+                            <div class="stars">
+                                <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star-half-alt"></i></span>
+                            </div>
+                            <div class="rate">
+                                <span class="firt"><del>$30</del></span>
+                                <span class="last">$15</span>
+                            </div>
+                            <button class="card-btn">add to card</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div id="card">
+                        <img src="/img/lap.jpg" alt="Avatar" style="width:100%">
+                        <div class="container">
+                            <h3>HTML, CSS AND JAVASCRIPT FOR STUDENTS</h3>
+                            <p>Ali Asghari</p>
+                            <div class="stars">
+                                <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star-half-alt"></i></span>
+                            </div>
+                            <div class="rate">
+                                <span class="firt"><del>$30</del></span>
+                                <span class="last">$15</span>
+                            </div>
+                            <button class="card-btn">add to card</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div id="card">
+                        <img src="/img/lap.jpg" alt="Avatar" style="width:100%">
+                        <div class="container">
+                            <h3>HTML, CSS AND JAVASCRIPT FOR STUDENTS</h3>
+                            <p>Ali Asghari</p>
+                            <div class="stars">
+                                <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star-half-alt"></i></span>
+                            </div>
+                            <div class="rate">
+                                <span class="firt"><del>$30</del></span>
+                                <span class="last">$15</span>
+                            </div>
+                            <button class="card-btn">add to card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div id="card">
+                        <img src="/img/lap.jpg" alt="Avatar" style="width:100%">
+                        <div class="container">
+                            <h3>HTML, CSS AND JAVASCRIPT FOR STUDENTS</h3>
+                            <p>Ali Asghari</p>
+                            <div class="stars">
+                                <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star-half-alt"></i></span>
+                            </div>
+                            <div class="rate">
+                                <span class="firt"><del>$30</del></span>
+                                <span class="last">$15</span>
+                            </div>
+                            <button class="card-btn">add to card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div id="card">
+                        <img src="/img/lap.jpg" alt="Avatar" style="width:100%">
+                        <div class="container">
+                            <h3>HTML, CSS AND JAVASCRIPT FOR STUDENTS</h3>
+                            <p>Ali Asghari</p>
+                            <div class="stars">
+                                <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star-half-alt"></i></span>
+                            </div>
+                            <div class="rate">
+                                <span class="firt"><del>$30</del></span>
+                                <span class="last">$15</span>
+                            </div>
+                            <button class="card-btn">add to card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="col-a">
+                <div class="footer-text">
+                    <ul>
+                        <li><a href="#">
+                                Social media
+                            </a></li>
+                        <li><a href="#">
+                                Business
+                            </a></li>
+                        <li><a href="#">
+                                Science
+                            </a></li>
+                        <li><a href="#">
+                                More info
+                            </a></li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </header>
-
-
-    <div id="hero">
-        <div class="container">
-            <div class="row">
-                <div class="six columns">
-                    <div class="hero-content">
-                        <h2 id="learn">Learn Something New Today</h2>
-                        <p class="tagline"> Special Offers, any course  $14</p>
-                        <form action="#" id="search" method="post" class="form">
-                            <input class="u-full-width" type="text" placeholder="What Do You Want To Learn? "
-                                id="search-course">
-                            <input type="submit" id="submit-search-course" class="submit-search-course">
-                        </form>
-                    </div>
+            <div class="col-b">
+                <div class="footer-map">
+                    <iframe class="embed-responsive-item"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d424143.2712350488!2d150.65179119247972!3d-33.84792704238197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2sSydney+NSW!5e0!3m2!1sen!2sau!4v1557690746894!5m2!1sen!2sau"
+                        width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="main-bar">
-        <div class="container">
-            <div class="row">
-                <div class="four columns icon icon1">
-                    <p>20,000 online courses <br>
-                        Learn new skills</p>
-                </div>
-                <div class="four columns icon icon2">
-                    <p>Expert Instructors<br>
-                        Learn with different teach styles</p>
-                </div>
-                <div class="four columns icon icon3">
-                    <p>Lifetime access <br>
-                        learn at your own pace</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div id="courses-list" class="container">
-        <h1 id="heading" class="heading">Online Courses</h1>
-        <div class="row">
-            <div class="four columns">
-                <div class="card">
-                    <img src="img/course1.jpg" class="course-image u-full-width">
-                    <div class="info-card">
-                        <h4>HTML5, CSS3, JavaScript for beginners</h4>
-                        <p>Juan Pedro</p>
-                        <img src="img/stars.png">
-                        <p class="price">$200 <span class="u-pull-right ">$15</span></p>
-                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="1">Add to
-                            Cart</a>
-                    </div>
-                </div>
-                <!--.card-->
-            </div>
-            <div class="four columns">
-                <div class="card">
-                    <img src="img/course2.jpg" class="course-image u-full-width">
-                    <div class="info-card">
-                        <h4>Cooking Course</h4>
-                        <p>Juan Pedro</p>
-                        <img src="img/stars.png">
-                        <p class="price">$200 <span class="u-pull-right ">$15</span></p>
-                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="2">Add to
-                            Cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="four columns">
-                <div class="card">
-                    <img src="img/course3.jpg" class="course-image u-full-width">
-                    <div class="info-card">
-                        <h4>Guitar for beginners</h4>
-                        <p>Juan Pedro</p>
-                        <img src="img/stars.png">
-                        <p class="price">$200 <span class="u-pull-right ">$15</span></p>
-                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="3">Add to
-                            Cart</a>
-                    </div>
-                </div>
-                <!--.card-->
-            </div>
-
-        </div>
-        <!--.row-->
-        <div class="row">
-            <div class="four columns">
-                <div class="card">
-                    <img src="img/course4.jpg" class="course-image u-full-width">
-                    <div class="info-card">
-                        <h4>Orchard at home</h4>
-                        <p>Juan Pedro</p>
-                        <img src="img/stars.png">
-                        <p class="price">$200 <span class="u-pull-right ">$15</span></p>
-                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="4">Add to
-                            Cart</a>
-                    </div>
-                </div>
-                <!--.card-->
-            </div>
-            <div class="four columns">
-                <div class="card">
-                    <img src="img/course5.jpg" class="course-image u-full-width">
-                    <div class="info-card">
-                        <h4>Home Decor with recycled products</h4>
-                        <p>Juan Pedro</p>
-                        <img src="img/stars.png">
-                        <p class="price">$200 <span class="u-pull-right ">$15</span></p>
-                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="5">Add to
-                            Cart</a>
-                    </div>
-                </div>
-                <!--.card-->
-            </div>
-            <div class="four columns">
-                <div class="card">
-                    <img src="img/course1.jpg" class="course-image u-full-width">
-                    <div class="info-card">
-                        <h4>Web Design for beginners</h4>
-                        <p>Juan Pedro</p>
-                        <img src="img/stars.png">
-                        <p class="price">$200 <span class="u-pull-right ">$15</span></p>
-                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="6">Add to
-                            Cart</a>
-                    </div>
-                </div>
-                <!--.card-->
-            </div>
-        </div>
-        <!--.row-->
-        <div class="row">
-            <div class="four columns">
-                <div class="card">
-                    <img src="img/course2.jpg" class="course-image u-full-width">
-                    <div class="info-card">
-                        <h4>Learn to cook mexican food</h4>
-                        <p>Juan Pedro</p>
-                        <img src="img/stars.png">
-                        <p class="price">$200 <span class="u-pull-right ">$15</span></p>
-                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="7">Add to
-                            Cart</a>
-                    </div>
-                </div>
-                <!--.card-->
-            </div>
-            <div class="four columns">
-                <div class="card">
-                    <img src="img/course3.jpg" class="course-image u-full-width">
-                    <div class="info-card">
-                        <h4>Build a Music Studio</h4>
-                        <p>Juan Pedro</p>
-                        <img src="img/stars.png">
-                        <p class="price">$200 <span class="u-pull-right ">$15</span></p>
-                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="8">Add to
-                            Cart</a>
-                    </div>
-                </div>
-                <!--.card-->
-            </div>
-            <div class="four columns">
-                <div class="card">
-                    <img src="img/course4.jpg" class="course-image u-full-width">
-                    <div class="info-card">
-                        <h4>Harvest your own fruits and vegetables</h4>
-                        <p>Juan Pedro</p>
-                        <img src="img/stars.png">
-                        <p class="price">$200 <span class="u-pull-right ">$15</span></p>
-                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="9">Add to
-                            Cart</a>
-                    </div>
-                </div>
-                <!--.card-->
-            </div>
-        </div>
-        <!--.row-->
-        <div class="row">
-            <div class="four columns">
-                <div class="card">
-                    <img src="img/course5.jpg" class="course-image u-full-width">
-                    <div class="info-card">
-                        <h4>Cook home cookies</h4>
-                        <p>Juan Pedro</p>
-                        <img src="img/stars.png">
-                        <p class="price">$200 <span class="u-pull-right ">$15</span></p>
-                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="10">Add to
-                            Cart</a>
-                    </div>
-                </div>
-                <!--.card-->
-            </div>
-            <div class="four columns">
-                <div class="card">
-                    <img src="img/course1.jpg" class="course-image u-full-width">
-                    <div class="info-card">
-                        <h4>Modern JavaScript</h4>
-                        <p>Juan Pedro</p>
-                        <img src="img/stars.png">
-                        <p class="price">$200 <span class="u-pull-right ">$15</span></p>
-                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="11">Add to
-                            Cart</a>
-                    </div>
-                </div>
-                <!--.card-->
-            </div>
-            <div class="four columns">
-                <div class="card">
-                    <img src="img/course2.jpg" class="course-image u-full-width">
-                    <div class="info-card">
-                        <h4>100 Natural recipes</h4>
-                        <p>Juan Pedro</p>
-                        <img src="img/stars.png">
-                        <p class="price">$200 <span class="u-pull-right ">$15</span></p>
-                        <a href="#" class="u-full-width button-primary button input add-to-cart" data-id="12">Add to
-                            Cart</a>
-                    </div>
-                </div>
-                <!--.card-->
-            </div>
-        </div>
-        <!--.row-->
-    </div>
-
-    <footer id="footer" class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="four columns">
-                    <nav id="primary" class="menu">
-                        <a class="link" href="#">For Business</a>
-                        <a class="link" href="#">Become an Instructor</a>
-                        <a class="link" href="#">Mobile Applications</a>
-                        <a class="link" href="#">Support</a>
-                        <a class="link" href="#">Help</a>
-                    </nav>
-                </div>
-                <div class="four columns">
-                    <nav id="secondary" class="menu">
-                        <a class="link" href="#">About Us</a>
-                        <a class="link" href="#">Work with us</a>
-                        <a class="link" href="#">Blog</a>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/app.js"></script>
-
+    <!-- Script seciont -->
+    <script src="/js/app.js"></script>
 </body>
 
 </html>
