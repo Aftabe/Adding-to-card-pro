@@ -123,17 +123,33 @@ li a {
       background-position: top;
       background-repeat: no-repeat;
       position: relative;
+      /* padding: 2rem; */
   }
 
 
 
   /* about form */
   .search-container{
-    padding: 10px;
+    padding: 2rem;
     position: absolute;
     top: 40%;
     left: 30%;
     transform: translate(-50%, -50%);
+  }
+
+  /* Media query */
+  @media only screen and (max-width: 600px) {
+    .search-container{
+      /* margin-right: 0px !important; */
+      left: 48%;
+      margin: auto;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .list-text-modi{
+      display: none !important;
+    }
   }
   
   .input{
