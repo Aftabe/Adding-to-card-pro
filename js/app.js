@@ -1,5 +1,5 @@
 // Variables
-const shoppingCartContent = document.querySelector('#shopping-cart tbody'),
+const shoppingCartContent = document.querySelector('.card-body'),
       courses = document.querySelector('#courses-list'),
       clearCartBtn = document.querySelector('#clear-cart');
 
