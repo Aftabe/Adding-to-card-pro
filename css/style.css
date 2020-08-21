@@ -236,15 +236,19 @@ li a {
   /* our courses */
 
   .courses h1{
-    padding: 10px 20px;
+    padding-top: 3rem;
     text-align: center;
     font-size: 30px;
     text-transform: uppercase;
   }
 
   .row{
-      padding: 5rem 7rem;
+      /* padding: 5rem; */
       width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
       /* padding-left: 18rem; */
   }
   /* Create three equal columns that floats next to each other */
@@ -371,4 +375,10 @@ li a {
 
 .card-body{
   font-size: 16px;
+}
+
+
+.course-tile{
+  padding-top: 4rem;
+  margin-bottom: 0rem;
 }
