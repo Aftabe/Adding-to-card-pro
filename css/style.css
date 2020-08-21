@@ -47,6 +47,7 @@ li a {
     position: absolute;
     min-width: 350px;
     height: 400px;
+    overflow: auto;
 }
 
 .shopping-card-icon:hover .dropdown-content {
@@ -356,3 +357,18 @@ li a {
     text-decoration: none;
     font-size: 20px;
   }
+
+
+  /* Remove button */
+  .remove {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.card-body{
+  font-size: 16px;
+}
